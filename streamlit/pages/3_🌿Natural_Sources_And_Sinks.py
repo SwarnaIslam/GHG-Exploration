@@ -24,7 +24,7 @@ st.set_page_config(
     page_icon="🌿",
     layout="wide",
 )
-st.sidebar.image(image="./static/gex_logo.png")
+st.sidebar.image(image="app/static/gex_logo.png")
 
 with open("styles.css") as f:
     css = f.read()
