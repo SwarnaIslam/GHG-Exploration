@@ -1,0 +1,11 @@
+geopandas
+leafmap
+owslib
+streamlit
+earthengine-api
+geemap
+streamlit-folium
+leafmap[maplibre]
+python-dotenv
+google-generativeai
+streamlit-modal
