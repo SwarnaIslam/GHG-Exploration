@@ -157,7 +157,7 @@ collection_frequency = {
 
 layer_dataset = {
     "OCO-2 MIP Top-down CO₂ Budgets": [
-        "data/oco2-mip-co2budget-yeargrid-v1.csv",
+        "streamlit/data/oco2-mip-co2budget-yeargrid-v1.csv",
         "Budget",
         "OCO-2 MIP Top-down CO₂ Budgets",
     ],

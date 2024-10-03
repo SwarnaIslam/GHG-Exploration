@@ -96,7 +96,7 @@ def save_stats_to_csv(df, collection_name):
     """
     Save the cleaned DataFrame to a CSV file.
     """
-    csv_file = f"data/{collection_name}.csv"
+    csv_file = f"streamlit/data/{collection_name}.csv"
     df.to_csv(csv_file, index=False)
     print(f"Data saved to {csv_file}")
     return csv_file

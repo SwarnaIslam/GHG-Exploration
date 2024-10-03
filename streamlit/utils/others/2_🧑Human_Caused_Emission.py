@@ -200,7 +200,7 @@ with st.container():
 with st.container():
 
     # Read the CSV file
-    df = pd.read_csv("data/oco2-mip-co2budget-yeargrid-v1.csv")
+    df = pd.read_csv("streamlit/data/oco2-mip-co2budget-yeargrid-v1.csv")
 
     st.title("OCO-2 MIP Annual carbon dioxide emissions and removals")
 

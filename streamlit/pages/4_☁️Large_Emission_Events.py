@@ -48,7 +48,7 @@ layer_options = {
 
 layer_dataset = {
     "TM5-4DVar Isotopic CH₄ Inverse Fluxes": [
-        "data/tm54dvar-ch4flux-mask-monthgrid-v1.csv",
+        "streamlit/data/tm54dvar-ch4flux-mask-monthgrid-v1.csv",
         "Emission",
         "CH₄ Inverse Fluxes",
     ]

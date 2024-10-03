@@ -54,18 +54,18 @@ layer_options = {
 
 layer_dataset = {
     "ECCO-Darwin CO₂ Fluxes 2021": [
-        "data/eccodarwin-co2flux-monthgrid-v5.csv",
+        "streamlit/data/eccodarwin-co2flux-monthgrid-v5.csv",
         "Absorption",
         "Air-Sea CO₂ Flux: Global Ocean Carbon Absorption",
     ],
     "MiCASA Land Carbon Flux 2023": [
-        "data/micasa-carbonflux-monthgrid-v1.csv",
+        "streamlit/data/micasa-carbonflux-monthgrid-v1.csv",
         "Emission",
         "MiCASA Land Carbon Flux: Global Carbon Fluxes",
     ],
     "GOSAT CH₄ Budget 2019": "",
     "LPJ-EOSIM Wetland CH₄ Emissions 2024": [
-        "data/lpjeosim-wetlandch4-monthgrid-v2.csv",
+        "streamlit/data/lpjeosim-wetlandch4-monthgrid-v2.csv",
         "Emission",
         "Global Methane Emissions from Wetlands",
     ],

@@ -95,7 +95,7 @@ with st.container():
     # maximum = 6.5816521644592285
     # minimum = -0.3509398102760315
 
-    micasa_df = pd.read_csv("data/micasa-carbonflux-monthgrid-v1.csv")
+    micasa_df = pd.read_csv("streamlit/data/micasa-carbonflux-monthgrid-v1.csv")
     micasa_df["datetime"] = pd.to_datetime(micasa_df["datetime"])
 
     mean = micasa_df["mean"].mean()
