@@ -24,10 +24,66 @@ st.set_page_config(
     page_icon="🌿",
     layout="wide",
 )
-st.sidebar.image(image="https://view-map.streamlit.app/static/gex_logo.png")
 
-with open("styles.css") as f:
-    css = f.read()
+css = """
+/* disable human running icon while loading starts */
+div[data-testid="stToolbar"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+}
+
+div[data-testid="stDecoration"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+}
+
+div[data-testid="stStatusWidget"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+}
+
+#MainMenu {
+    visibility: hidden;
+    height: 0%;
+}
+
+header {
+    visibility: hidden;
+    height: 0%;
+}
+
+footer {
+    visibility: hidden;
+    height: 0%;
+}
+
+/* disable human running icon while loading ends */
+
+
+/* disable loading fade effect */
+.element-container {
+    opacity: 1 !important
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.stApp {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.st-emotion-cache-keje6w {
+    width: calc(50% - 1rem);
+    flex: 1 1 calc(50% - 1rem);
+    /* height: 20vh; */
+}
+"""
 
 st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
