@@ -9,3 +9,4 @@ leafmap[maplibre]
 python-dotenv
 google-generativeai
 streamlit-modal
+path
