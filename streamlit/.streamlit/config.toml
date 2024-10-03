@@ -5,4 +5,4 @@ secondaryBackgroundColor = "#F0F2F6"
 textColor = "#31333F"
 font = "sans serif"
 [server]
-STREAMLIT_SERVER_ENABLE_STATIC_SERVING = true
+enableStaticServing = true
