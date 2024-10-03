@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn==0.31.0
+pymongo==4.10.1
+python-jose[cryptography]==3.3.0
+requests==2.32.3
+apscheduler==3.10.4
+aiohttp==3.10.8
+asyncio==3.4.3
+python-dotenv==1.0.1
+pydantic==2.9.2
