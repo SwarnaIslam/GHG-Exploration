@@ -34,7 +34,7 @@ st.set_page_config(
 )
 st.sidebar.image(image="https://view-map.streamlit.app/static/gex_logo.png")
 
-with open("https://view-map.streamlit.app/styles.css") as f:
+with open("https://view-map.streamlit.app/static/styles.css") as f:
     css = f.read()
 
 st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
