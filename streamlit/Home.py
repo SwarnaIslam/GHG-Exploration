@@ -21,6 +21,7 @@ from streamlit_folium import st_folium
 
 import streamlit as st
 import datetime
+from keys import credentials_json
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -39,8 +40,8 @@ with open("styles.css") as f:
 st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
 # Initialize Google Earth Engine
-service_account = os.getenv("GEE_EMAIL")
-credentials = ee.ServiceAccountCredentials(service_account, )
+service_account = st.secrets["general"]["GEE_EMAIL"]
+credentials = ee.ServiceAccountCredentials(service_account, key_data= credentials_json)
 ee.Initialize(credentials)
 
 ############### CURRENT LOCATION ##############

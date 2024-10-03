@@ -15,6 +15,7 @@ from streamlit_modal import Modal
 
 from utils.basic_stats import generate_basic_stats
 from utils.custom_chat_bot import create_chatbot
+from keys import credentials_json
 load_dotenv()
 
 # st.set_page_config(layout="wide")
@@ -31,8 +32,8 @@ with open("styles.css") as f:
 st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
 ############ AUTHENTICATION ##############
-service_account = os.getenv("GEE_EMAIL")
-credentials = ee.ServiceAccountCredentials(service_account, "keys.json")
+service_account = st.secrets["general"]["GEE_EMAIL"]
+credentials = ee.ServiceAccountCredentials(service_account, key_data=credentials_json)
 ee.Initialize(credentials)
 
 ############ MAIN FUNCTION ##############

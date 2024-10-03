@@ -3,6 +3,7 @@ import leafmap.foliumap as leafmap
 import leafmap.maplibregl as leafmap
 import streamlit as st
 import os
+from keys import credentials_json
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -10,7 +11,7 @@ st.set_page_config(layout="wide")
 
 ############ AUTHENTICATION ##############
 service_account = os.getenv("GEE_EMAIL")
-credentials = ee.ServiceAccountCredentials(service_account, "keys.json")
+credentials = ee.ServiceAccountCredentials(service_account, key_data=credentials_json)
 ee.Initialize(credentials)
 
 

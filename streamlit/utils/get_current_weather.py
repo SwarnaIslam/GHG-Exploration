@@ -2,6 +2,7 @@ import http.client
 import json
 import os
 from dotenv import load_dotenv
+import streamlit as st
 load_dotenv()
 
 
@@ -11,8 +12,8 @@ def get_weather_and_aqi_data(lat, lng):
 
     # Define headers for the weather API request
     weather_headers = {
-        "x-rapidapi-key": os.getenv("WEATHER_API_KEY"),
-        "x-rapidapi-host": os.getenv("WEATHER_API_HOST"),
+        "x-rapidapi-key": st.secrets["general"]["WEATHER_API_KEY"],
+        "x-rapidapi-host": st.secrets["general"]["WEATHER_API_HOST"],
     }
 
     # Request current weather data

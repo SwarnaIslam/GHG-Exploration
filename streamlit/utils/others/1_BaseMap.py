@@ -6,6 +6,7 @@ import streamlit as st
 from streamlit_folium import st_folium
 from dotenv import load_dotenv
 import os
+from keys import credentials_json
 load_dotenv()
 
 st.set_page_config(layout="wide")
@@ -17,7 +18,7 @@ st.title("Location Search")
 
 ############ AUTHENTICATION ##############
 service_account = os.getenv("GEE_EMAIL")
-credentials = ee.ServiceAccountCredentials(service_account, "keys.json")
+credentials = ee.ServiceAccountCredentials(service_account, key_data=credentials_json)
 ee.Initialize(credentials)
 
 

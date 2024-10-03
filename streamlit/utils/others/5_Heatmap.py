@@ -5,6 +5,7 @@ import json
 import pandas as pd
 from datetime import datetime
 from streamlit_folium import st_folium
+from keys import credentials_json
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -15,7 +16,7 @@ st.set_page_config(
 
 # Authenticate and initialize Earth Engine
 service_account = os.getenv("GEE_EMAIL")
-credentials = ee.ServiceAccountCredentials(service_account, "keys.json")
+credentials = ee.ServiceAccountCredentials(service_account, key_data=credentials_json)
 ee.Initialize(credentials)
 
 

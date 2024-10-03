@@ -1,3 +1,4 @@
-keys.json
+key_data=credentials_json
 .venv
 .env
+.streamlit/secrets.toml

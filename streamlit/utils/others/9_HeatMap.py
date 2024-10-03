@@ -3,6 +3,7 @@ import folium
 from streamlit_folium import st_folium
 import geemap.foliumap as geemap
 import ee
+from keys import credentials_json
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -11,7 +12,7 @@ st.set_page_config(layout="wide")
 
 ############ AUTHENTICATION ##############
 service_account = os.getenv("GEE_EMAIL")
-credentials = ee.ServiceAccountCredentials(service_account, "keys.json")
+credentials = ee.ServiceAccountCredentials(service_account, key_data=credentials_json)
 ee.Initialize(credentials)
 
 dataset = ee.FeatureCollection('USDOS/LSIB_SIMPLE/2017')

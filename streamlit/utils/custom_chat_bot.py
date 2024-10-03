@@ -9,7 +9,7 @@ from streamlit_modal import Modal
 load_dotenv()
 
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets["general"]["GOOGLE_API_KEY"]
 gen_ai.configure(api_key=GOOGLE_API_KEY)
 model = gen_ai.GenerativeModel("gemini-pro")
 
