@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply p-0 m-0 box-border;
+  }
+
+  html,
+  body {
+    @apply h-full;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+
+  body {
+    @apply min-h-screen;
+    /* Apply Tailwind min-height */
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.App {
+  @apply w-full mx-auto min-h-screen;
+}
+
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-7;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-[3rem] pt-[2rem];
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+
+  .text-col {
+    @apply text-[#ffffff];
+  }
+  .sm-text-col {
+    @apply sm:text-[#a2a1a1];
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+
+}
+
+@font-face {
+  font-family: PressStart;
+  src: url('/font/PressStart2P-Regular.ttf') format("truetype");
+}
+
+.PressStart {
+  font-family: PressStart;
+}
+
+/* .blur-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.568);
+  border-radius: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: none;
+} */
+
+.blur-option {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.377);
+  border-radius: 0px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: none;
+}
