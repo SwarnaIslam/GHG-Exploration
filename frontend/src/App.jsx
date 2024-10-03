@@ -4,7 +4,6 @@ import {
   Login,
   Home,
   Logout,
-  MapWrapper,
   Education,
   Notification,
   DraggableGame,

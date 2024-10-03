@@ -1,8 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useMap, GeoJSON } from "react-leaflet";
-import "leaflet.locatecontrol";
-import "leaflet.locatecontrol/dist/L.Control.Locate.min.css";
-import L from "leaflet";
+import React from "react";
 
 const MapComponent = () => {
   console.log(import.meta.env.VITE_STREAMLIT_URL);

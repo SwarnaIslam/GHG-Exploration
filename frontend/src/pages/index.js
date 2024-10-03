@@ -4,7 +4,6 @@ import Home from "./Home";
 import Education from "./Education";
 import Notification from "./Notification";
 import Logout from "./Logout";
-import MapWrapper from "./MapWrapper/MapWrapper";
 import CO2 from "./CO2";
 import CH4 from "./CH4";
 import Fluorinates from "./Fluorinates";
@@ -18,7 +17,6 @@ export {
   Education,
   Notification,
   Logout,
-  MapWrapper,
   CO2,
   CH4,
   Fluorinates,
