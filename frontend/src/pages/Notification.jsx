@@ -43,7 +43,6 @@ const Notification = () => {
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
                 setLocation({ latitude, longitude });
-                console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
               },
               (error) => {
                 setLocationError(error.message);
@@ -79,7 +78,6 @@ const Notification = () => {
         const response = await axios.get(
           `https://nominatim.openstreetmap.org/search?format=json&q=${inputValue}&addressdetails=1&limit=10&polygon_geojson=1`
         );
-        console.log(response.data);
 
         const places = response.data.map((place) => ({
           label: place.display_name,

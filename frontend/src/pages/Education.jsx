@@ -11,7 +11,6 @@ const Education = () => {
   useScrollReveal();
 
   const renderComponent = () => {
-    console.log("selectedOption", selectedOption);
     switch (selectedOption) {
       case "CO2":
         return <CO2 />;

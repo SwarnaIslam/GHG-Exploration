@@ -11,10 +11,8 @@ const Login = () => {
   const [loading, setLoading] = useState(true);
 
   async function handleCredentialResponse(response) {
-    console.log("Encoded JWT ID token: " + response.credential);
     try {
       const userObject = jwtDecode(response.credential);
-      console.log("Decoded JWT ID token: " + JSON.stringify(userObject));
       setUser(userObject);
 
       //setting tokenId
@@ -30,7 +28,6 @@ const Login = () => {
       const { access_token } = res.data;
       localStorage.setItem("access_token", access_token);
 
-      console.log("User logged in successfully:", res.data);
 
       document.getElementById("g_id_onload").hidden = true;
       navigate("/");
