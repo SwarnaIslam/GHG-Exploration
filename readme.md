@@ -1,15 +1,15 @@
 
-# ![ghg-icon](https://github.com/user-attachments/assets/2a4526f7-b6b4-4640-80d8-8a23caf1959d) GHG_Xplorer 
+# ![ghg-icon](https://github.com/user-attachments/assets/2a4526f7-b6b4-4640-80d8-8a23caf1959d) GHG_Explorer 
 
-GHG_Xplorer is a web based application to map both human-caused and natural greenhouse gas emissions to enable better understanding of how these emissions contribute to a warmer world. By using an innovative combinations of satellite and model based data, the project could enable new insights and approaches that help communities and decision-makers better understand the three focus areas for greenhouse gas emissions (human-caused GHG emissions, natural sources and sinks of GHG emissions, and large GHG emission events). This project is developed by our team "Ogrodut". 
+GHG_Explorer is a web based application to map both human-caused and natural greenhouse gas emissions to enable better understanding of how these emissions contribute to a warmer world. By using an innovative combinations of satellite and model based data, the project could enable new insights and approaches that help communities and decision-makers better understand the three focus areas for greenhouse gas emissions (human-caused GHG emissions, natural sources and sinks of GHG emissions, and large GHG emission events). This project is developed by our team "Ogrodut". 
 
 ## Introduction
 
-Our project "GHG_Xplorer" is a web application that responds to the challenge "
+Our project "GHG_Explorer" is a web application that responds to the challenge "
 Uncover the Role of Greenhouse Gases in Your Neighborhood!" in the NASA SPACE APP CHALLENGE 2024. 
 
 **Web Application Link**: 
-[GHF_Xplorer](https://ghg-exploration.netlify.app/)  
+[GHF_Explorer](https://ghg-exploration.netlify.app/)  
 
 ## Team Ogrodut
 **Swarna Islam:** Team Leader, Full Stack Developer
@@ -26,12 +26,12 @@ Uncover the Role of Greenhouse Gases in Your Neighborhood!" in the NASA SPACE AP
 
 ## Features
 
-- Map in three focus areas (human-caused GHG emissions, natural sources and sinks of GHG emissions, and large GHG emission events) using innovative combinations of satellite and model based data and a graph on the trends of greenhouse gas emissions (CO2, CH4) over a period of time. Also our bot "Ogrodut" is here to help users understand the map and clarify their doubts regarding map and analysis.
-- Education section to enlighten users about what is greenhouse gas effect, more details about CO2, CH4, Fluorinated gas. We suggested sustainable solutions towards the climate change problem for policy makers and communities.
-- A quiz section to know which sectors contribute to greenhouse gas emissions as an anthropogenic source and a natural source.
-- A bot named "Ogrodut" to help users to clarify their doubts and understand topics related to greenhouse gas effect. 
-- A mobile game named "Nobayon" to simulate how we can reduce greenhouse gas emissions in our environment and make it more green world.
-- Users can set the option to provide them with the notification via email if there is any sudden plume in their selected area. 
+- Map in the three focus areas (human-caused GHG emissions, natural sources and sinks of GHG emissions, and large GHG emission events) using innovative combinations of satellite and model based data and a graph on the trends of greenhouse gas emissions (CO2, CH4) over a period of time. Also our bot "Ogrodut" is here to help users understand the map and clarify their doubts regarding map and data analysis.
+- Education section to enlighten users about what is greenhouse gas effect, more details about CO2, CH4, Fluorinated gas. We suggested sustainable solutions towards the climate change problem for decision-makers and communities.
+- A quiz section to know which sectors contribute to greenhouse gas emissions as anthropogenic sources and natural sources.
+- A bot named "OgrodutBot" to help users to clarify their doubts and understand topics related to greenhouse gas effect. 
+- A mobile game named "Nobayon" to simulate how much greenhouse gasses are emitted by the objects or elements around them and their contribution to the increasing temperature.
+- Users can set the option to provide them with the notification via email if there is any sudden plume in their selected area while truning on the notification option. 
 - User fiendly application
 
 
@@ -39,13 +39,13 @@ Uncover the Role of Greenhouse Gases in Your Neighborhood!" in the NASA SPACE AP
 
 **Frontend:** Reactjs, TailwindCSS, Material UI, Phaser, Shadcn, Daisyui
 
-**Backend:** python, streamlit, FastAPI
+**Backend:** Python, Streamlit, FastAPI
 
 **AR**: Unity, Android
 
 **OgrodutBot**: Gemini API
 
-**Database**: mongodb
+**Database**: Mongodb
 
 ## Tools
 
@@ -59,9 +59,9 @@ Uncover the Role of Greenhouse Gases in Your Neighborhood!" in the NASA SPACE AP
 
 ## For Deployment
 
- - Streamlit: streamlit cloud
- - Frontend: netlify
- - Backend: render
+ - Streamlit: Streamlit Cloud
+ - Frontend: Netlify
+ - Backend: Render
 
 ## Used Datasets
 
