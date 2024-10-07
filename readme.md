@@ -31,7 +31,7 @@ Uncover the Role of Greenhouse Gases in Your Neighborhood!" in the NASA SPACE AP
 - A quiz section to know which sectors contribute to greenhouse gas emissions as anthropogenic sources and natural sources.
 - A bot named "OgrodutBot" to help users to clarify their doubts and understand topics related to greenhouse gas effect. 
 - A mobile game named "Nobayon" to simulate how much greenhouse gasses are emitted by the objects or elements around them and their contribution to the increasing temperature.
-- Users can set the option to provide them with the notification via email if there is any sudden plume in their selected area while truning on the notification option. 
+- Users can set the option to provide them with the notification in their selected area from our website.  
 - User fiendly application
 
 
