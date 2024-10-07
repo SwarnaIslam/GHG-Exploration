@@ -9,7 +9,7 @@ Our project "GHG_Explorer" is a web application that responds to the challenge "
 Uncover the Role of Greenhouse Gases in Your Neighborhood!" in the NASA SPACE APP CHALLENGE 2024. 
 
 **Web Application Link**: 
-[GHF_Explorer](https://ghg-exploration.netlify.app/)  
+[GHG_Explorer](https://ghg-exploration.netlify.app/)  
 
 ## Team Ogrodut
 **Swarna Islam:** Team Leader, Full Stack Developer
